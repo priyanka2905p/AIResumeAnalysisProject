@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Resume Analyzer</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+<h2>Upload Your Resume</h2>
+<form id="resumeForm" enctype="multipart/form-data">
+    <input type="file"  id="fileInput" required />
+    <button type="submit">Upload & Analyze</button>
+</form>
+<div class="result" id="result" style="display:none;">
+<h3>Analysis Result:</h3>
+    <p><strong>File:</strong> <span id="file"></span></p>
+    <p><strong>Score:</strong> <span id="score"></span></p>
+    <p><strong>Skills:</strong> <span id="skills"></span></p>
+<p><strong>Recommendation:</strong><span id="recommendation"></span> </p>
+</div>
+
+<script src="/js/script.js"></script>
+</body>
+</html>
